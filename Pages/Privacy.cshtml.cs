@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using WebApp.Models;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 using WebAppShop.Models;
 
 namespace WebAppShop.Pages
