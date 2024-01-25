@@ -1,0 +1,14 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+<p></p>
+<p>user.id = @Model._webAppInitData.user.id</p>
+<p>user.first_name = @Model._webAppInitData.user.first_name</p>
+<p>user.last_name = @Model._webAppInitData.user.last_name</p>
+<p>user.is_bot = @Model._webAppInitData.user.is_bot</p>
+<p></p>
