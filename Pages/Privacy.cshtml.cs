@@ -1,12 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using WebApp.Models;
+using WebAppShop.Models;
 
 namespace WebAppShop.Pages
 {
     public class PrivacyModel : PageModel
     {
-        public TelegramWebAppInitData _webAppInitData;
+        public TelegramParametrs _telegramParametrs;
         private readonly ILogger<PrivacyModel> _logger;
 
         public PrivacyModel(ILogger<PrivacyModel> logger)
@@ -14,9 +15,9 @@ namespace WebAppShop.Pages
             _logger = logger;
         }
 
-        public void OnGet(TelegramWebAppInitData webAppInitData)
+        public void OnGet(TelegramParametrs telegramParametrs)
         {
-            _webAppInitData = webAppInitData;
+            _telegramParametrs = telegramParametrs;
         }
     }
 

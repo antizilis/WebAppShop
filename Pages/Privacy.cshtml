@@ -6,9 +6,15 @@
 <h1>@ViewData["Title"]</h1>
 
 <p>Use this page to detail your site's privacy policy.</p>
-<p></p>
-<p>user.id = @Model._webAppInitData.user.id</p>
-<p>user.first_name = @Model._webAppInitData.user.first_name</p>
-<p>user.last_name = @Model._webAppInitData.user.last_name</p>
-<p>user.is_bot = @Model._webAppInitData.user.is_bot</p>
+
+<p>query_id = @Model._telegramParametrs.query_id</p>
+<p>id = @Model._telegramParametrs.user.id</p>
+<p>first_name = @Model._telegramParametrs.user.first_name</p>
+<p>last_name = @Model._telegramParametrs.user.last_name</p>
+<p>username = @Model._telegramParametrs.user.username</p>
+<p>language_code = @Model._telegramParametrs.user.language_code</p>
+<p>allows_write_to_pm = @Model._telegramParametrs.user.allows_write_to_pm</p>
+<p>auth_date = @Model._telegramParametrs.auth_date</p>
+<p>hash = @Model._telegramParametrs.hash</p>
+
 <p></p>
