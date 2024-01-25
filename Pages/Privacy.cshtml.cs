@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+using Newtonsoft.Json;
 using WebAppShop.Models;
 
 namespace WebAppShop.Pages
@@ -11,6 +12,8 @@ namespace WebAppShop.Pages
         public void OnGet(string param)
         {
             _param = param;
+
+            _telegramParametrs = JsonConvert.DeserializeObject<TelegramParametrs>(_param);
         }
     }
 
