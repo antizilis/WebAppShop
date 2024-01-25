@@ -6,16 +6,10 @@ namespace WebAppShop.Pages
     public class PrivacyModel : PageModel
     {
         public TelegramParametrs _telegramParametrs;
-        private readonly ILogger<PrivacyModel> _logger;
 
-        public PrivacyModel(ILogger<PrivacyModel> logger)
+        public void OnGet(TelegramParametrs param)
         {
-            _logger = logger;
-        }
-
-        public void OnGet(TelegramParametrs telegramParametrs)
-        {
-            _telegramParametrs = telegramParametrs;
+            _telegramParametrs = param;
         }
     }
 
